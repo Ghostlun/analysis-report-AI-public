@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.DS_Store
+
+# Local/private inputs. Adding these patterns does not untrack files already committed.
+data/raw/*.csv
+data/raw/*.json
+data/example/*.csv
+
+# Generated row-level artifacts; retain compact validation reports only.
+outputs/**/*.csv
+outputs/**/raw_*.json
+
+# Local backups and temporary files.
+*.bak
+*.tmp
